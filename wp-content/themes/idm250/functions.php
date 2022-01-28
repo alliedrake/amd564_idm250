@@ -39,9 +39,6 @@ function include_js_files() {
 
 add_action('wp_enqueue_scripts', 'include_js_files');
 
-?>
-
-<?php 
 
 function register_theme_navigation() {
 
@@ -53,4 +50,3 @@ register_nav_menus([
 
 add_action('after_setup_theme', 'register_theme_navigation');
 
-?>
