@@ -62,38 +62,139 @@ ul {
 a {
     text-decoration: none;
     display: inline-block;
-    margin-right: 4px;  /* inline-block gap fix */
+    margin-right: 4px; 
     color: #E57347;
     padding: 35px 22px;
     font-family: 'Gilroy-Medium';
     font-size: 20px;
 }
 
+
+/* ul#menu-header.menu {
+    padding-top: 2rem;
+    margin-right: 2rem;
+} */
+
+a {
+    text-decoration: none;
+    margin-right: 4px; 
+    color: #E57347;
+    padding: 35px 22px;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+}
+
+/* .menu-item-20, .menu-item-21, .menu-item-22 {
+display: inline;
+float: right;
+padding: 1rem;
+} */
+
+
 body {
     background-color: #E2E4F0;
 }
 
-.page_container {
-    display:flex;
+ .page_container {
+    /* display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-top: 4rem;
     padding-left: 4rem;
     padding-right: 4rem;
-}
+} 
 
 .intro {
     padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 .intro h1 {
     font-size: 4rem;
     font-family: 'Gilroy-Bold';
     color: #264E5E;
-    padding-top: 6rem;
+    padding-top: 4rem;
     
 }
 
-.footer {
+.menu-footer-container {
     background-color: #E57347;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+
+.menu-footer-container a {
+    color: #264E5E;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    padding-top: 2rem;
+ }
+
+
+ul#menu-footer.menu {
+    padding-top: 0.5rem;
+    display: inline;
+    float: left;
+    padding-left: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .intro h1 {
+        font-size: 3.5rem;
+        padding-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    a {
+        padding-top: 2rem;
+        font-size: 16px;
+        padding-right: 1rem;
+    }
+
+    /* .menu-item-20 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+
+    .menu-footer-container a {
+        text-decoration: none;
+        display: inline;
+        font-size: 16px;
+        padding: 0.5rem;
+        }
+
+    .intro h1 {
+        font-size: 2.8rem;
+        padding-top: 2rem;
+    }
+
+    .page_container {
+        /* display:flex;
+        justify-content: center;
+        align-items: center; */
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    } 
+}
+

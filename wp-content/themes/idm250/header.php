@@ -10,6 +10,10 @@
     </head>
 
     <body> 
+
+    <div class="nav">
 <?php 
 // Registered this new menu in functions.php via register_theme_navigation()
-wp_nav_menu(['theme_location' => 'primary_menu']);
+wp_nav_menu(['theme_location' => 'primary_menu']); ?>
+
+</div>
