@@ -23,12 +23,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-style: normal;
   }
 
-  @font-face {
+  /* @font-face {
     font-family: 'Gilroy-Medium';
     src: url('./fonts/Gilroy-Medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+  } */
 
   @font-face {
     font-family: 'Gilroy-Bold';
@@ -63,67 +63,113 @@ a {
     text-decoration: none;
     display: inline-block;
     margin-right: 4px; 
-    color: #E57347;
+    color: #FA8C62;
     padding: 35px 22px;
     font-family: 'Gilroy-Medium';
     font-size: 20px;
 }
 
-
-/* ul#menu-header.menu {
-    padding-top: 2rem;
-    margin-right: 2rem;
-} */
-
-a {
-    text-decoration: none;
-    margin-right: 4px; 
-    color: #E57347;
-    padding: 35px 22px;
-    font-family: 'Gilroy-Medium';
-    font-size: 20px;
+h1 {
+    font-size: 3rem;
+    font-family: 'Gilroy-Bold';
 }
 
-/* .menu-item-20, .menu-item-21, .menu-item-22 {
-display: inline;
-float: right;
-padding: 1rem;
-} */
+h2 {
+    font-family: 'Gilroy-Bold';
+    color: #264E5E; 
+}
 
 
 body {
     background-color: #E2E4F0;
 }
 
- .page_container {
-    /* display:flex;
-    justify-content: center;
-    align-items: center; */
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-} 
+
+
+
+
+/*////////////////*/
+/*////////////////*/
+/*////HOME///// //*/
+/*////////////////*/
+/*////////////////*/
+
 
 .intro {
-    padding-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+    padding-top: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    height: 700px;
 }
 
 .intro h1 {
     font-size: 4rem;
     font-family: 'Gilroy-Bold';
     color: #264E5E;
-    padding-top: 4rem;
-    
 }
 
+
+.what_i_do {
+    background-color: #ECEDF2;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.what_i_do img {
+    width: 30%;
+}
+
+.socials {
+    background-color: #f7f7f7;
+    height: 400px;
+    width: 100%;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.socials h2 {
+    font-size: 2.5rem;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.insta, a.github, a.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*////////////////*/
+/*////////////////*/
+/*/ FOOTER///// //*/
+/*////////////////*/
+/*////////////////*/
+
+
+
+
+
+
 .menu-footer-container {
-    background-color: #E57347;
+    background-color: #FA8C62;
     height: 4rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -185,16 +231,179 @@ ul#menu-footer.menu {
 
     .intro h1 {
         font-size: 2.8rem;
-        padding-top: 2rem;
     }
 
-    .page_container {
-        /* display:flex;
-        justify-content: center;
-        align-items: center; */
+    .intro {
         padding-top: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
-    } 
+    }
+    
+
 }
 
+
+
+
+
+/*////////////////*/
+/*////////////////*/
+/*/ My work CSS //*/
+/*////////////////*/
+/*////////////////*/
+
+
+
+.work-content {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
+    width: 100%;
+}
+
+img.philm {
+    width: 21.5rem;
+    height: 13.776;
+    margin-bottom: -0.3rem;
+    border-radius: 5px 5px 0px 0px; /* 5px rounded corners */
+}
+
+.card_container {
+    /* Add shadows to create the "card" effect */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    border-radius: 0 0 5px 5px; /* 5px rounded corners */
+  }
+  
+  /* Add some padding inside the card container */
+  .card_container {
+    padding: 2px 16px;
+    background-color: #ffffff;
+    width: 21.375rem;
+  }
+
+
+  h5 {
+      font-family: 'Gilroy-Bold';
+      color: #E57347;
+      letter-spacing: 2px;
+  }
+
+  h2.work_title {
+    margin-top: -0.8rem;
+    font-family: 'Gilroy-Bold';
+    color: #264E5E; 
+  }
+
+.card p {
+    font-family: 'Gilroy-Regular';
+    color: #264E5E;
+    font-size: 1rem;
+    margin-top: -0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+
+
+
+/*////////////////*/
+/*////////////////*/
+/*/// BLOG PAGE //*/
+/*////////////////*/
+/*////////////////*/
+
+
+
+.blog-container {
+    margin-top: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.blog-container p {
+    font-family: 'Gilroy-Medium';
+    color: #264E5E;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.blog-container h1, .blog-container h2, .blog-container h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.blog-container h3 {
+    font-family: 'Gilroy-Bold';
+    color: #E57347;
+}
+
+.microinteraction {
+    width: 70%;
+}
+
+ul.goals-list {
+    display: block;
+    font-family: 'Gilroy-Medium';
+    color: #264E5E;
+    line-height: 1.5rem;
+}
+
+li.goals {
+    display:list-item;
+    float: none;
+}
+
+table, th, td {
+    border: 3px solid #ECEDF2;
+    border-collapse: collapse;
+    padding: 1rem;
+    font-family: 'Gilroy-Medium';
+    color: #264E5E;
+  }
+
+th {
+    font-family: "Gilroy-Bold";
+    color: #FA8C62;
+}
+
+.table-flex {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-section {
+    
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+}
+
+.final-build img {
+    width: 50%;
+}
+
+.final-build {
+    display: flex;
+    justify-content: cetner;
+    align-items: center;
+    flex-direction: column;
+}
