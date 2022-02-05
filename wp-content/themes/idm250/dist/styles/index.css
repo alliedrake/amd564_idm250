@@ -72,6 +72,7 @@ a {
 h1 {
     font-size: 3rem;
     font-family: 'Gilroy-Bold';
+    color: #264E5E;
 }
 
 h2 {
@@ -256,18 +257,20 @@ ul#menu-footer.menu {
 
 .work-content {
     padding-top: 6rem;
+    padding-bottom: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-left: 3rem;
     margin-right: 3rem; */
     width: 100%;
+    overflow: hidden;
 }
 
 img.philm {
-    width: 21.5rem;
-    height: 13.776;
-    margin-bottom: -0.3rem;
+    width: 16.5rem;
+    height: 8.776;
+    margin-bottom: -0.6rem;
     border-radius: 5px 5px 0px 0px; /* 5px rounded corners */
 }
 
@@ -282,9 +285,8 @@ img.philm {
   .card_container {
     padding: 2px 16px;
     background-color: #ffffff;
-    width: 21.375rem;
+    width: 16.375rem;
   }
-
 
   h5 {
       font-family: 'Gilroy-Bold';
@@ -294,6 +296,7 @@ img.philm {
 
   h2.work_title {
     margin-top: -0.8rem;
+    font-size: 1.3rem;
     font-family: 'Gilroy-Bold';
     color: #264E5E; 
   }
@@ -301,7 +304,7 @@ img.philm {
 .card p {
     font-family: 'Gilroy-Regular';
     color: #264E5E;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: -0.8rem;
     padding-bottom: 0.5rem;
 }
@@ -334,6 +337,7 @@ img.philm {
     background-color: #f7f7f7;
     padding: 1rem;
     border-radius: 5px;
+    margin-bottom: 4rem;
 }
 
 .blog-container p {
@@ -354,8 +358,15 @@ img.philm {
     color: #E57347;
 }
 
+.img-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
 .microinteraction {
-    width: 70%;
+    width: 90%;
 }
 
 ul.goals-list {
@@ -384,10 +395,18 @@ th {
 }
 
 .table-flex {
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .quote-section {
@@ -398,12 +417,77 @@ th {
 }
 
 .final-build img {
-    width: 50%;
+    padding-top: 2rem;
+    width: 70%;
 }
 
 .final-build {
     display: flex;
-    justify-content: cetner;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+h3.tag {
+    margin-left: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #f7f7f7;
+    background-color: #E57347;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    }
+
+.view-project {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button.view {
+    font-family: "Gilroy-Bold";
+    background-color: #FA8C62;
+    color:#f7f7f7;
+    padding: 14px 16px;
+    border: 2px solid #FA8C62;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+
+/*////////////////*/
+/*////////////////*/
+/*/ SEARCH///// //*/
+/*////////////////*/
+/*////////////////*/
+
+
+.search-results {
+    padding-top: 6rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+
+img.search-result {
+    width: 50%;
+}
+
+.search-card {
+    background-color: #f7f7f7;
+    
+    border-radius: 10px;
+}
+
+.search-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }

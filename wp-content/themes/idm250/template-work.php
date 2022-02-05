@@ -17,10 +17,13 @@
 
 
     <!--Start content-->
+
+    <div class="work-content-grid">
     <div class="work-content">
 
 
         <?php the_content(); ?>
+
 
 
         <div class="card-flex">
@@ -61,6 +64,7 @@
 
 
     </div>
+</div>
         <!--End content-->
 </div>
 

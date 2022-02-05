@@ -19,10 +19,12 @@
 <div class="blog-container">
 
 <div class="heading">
-    <h3>Scriptwriting<h3>
-    <h1>Microinteractions</h1>
-    <h5>SPRING 2020 | IDM 241</h5>
+    <h3 class="tag">SCRIPTWRITING<h3>
+    <h1 style="margin-left: 2rem;">Microinteractions</h1>
+    <h5 style="margin-left: 3rem; font-size: 1rem; margin-top: -1.5rem;">SPRING 2020 | IDM 241</h5>
+    <div class="img-container">
     <img class="microinteraction" src="<?php echo get_template_directory_uri();?>/dist/images/microinteraction_hero.png">
+    </div>
 </div>
 
 <h2>Overview</h2>
@@ -65,6 +67,11 @@
 </table>
 </div>
 
+<div class="final-build">
+<img class="final-build" src="<?php echo get_template_directory_uri();?>/dist/images/final-build.png">
+<p class="caption">This is my complex interaction that I protoyped in preparation for the final.</p>
+</div>
+
 <h3 style="color:##E57347;">Beta Build</h3>
 <p>Once I had my description down, it was time to code. I found another working sample of what I wanted to replicate and started coding the HTML and CSS. I then added a Javascript file to be able to open and close the button. When I tested it, it wouldn't work. What I soon found out was that the working sample was using jQuery, and not Javascript. It took me a while to figure it out, but I learned that I had to add a Jquery library to the HTML file to get the Jquery to run. After that, the only difficulty I had was stylizing each link, and I figured that out by pinpointing each specific link and using the correct class names to stylize them with my professor. View my Beta Build here.</p>
 
@@ -77,12 +84,17 @@
 <h3 style="color:##E57347;">Final Build</h3>
 <p>It was time to start coding out my final description. I decided to focus on the links first, since I knew how to do that better than the sounds.  I only wanted the sound to play once on the button open, and once on the button close. With direction from my professor, I learned how to do an open flag if statement so that if the button was clicked the sound would play once. View my Final Build <b>here.</b></p>
 
-<div class="final-build">
-<img class="final-build" src="<?php echo get_template_directory_uri();?>/dist/images/final-build.png">
-<p class="caption">This is my complex interaction that I protoyped in preparation for the final.</p>
+<div class="video-section">
+<video width="420" height="340" controls>
+  <source src="<?php echo get_template_directory_uri();?>/dist/images/mic-video.mp4" type="video/mp4">
+</video>
+<p class="caption">The final microinteraction.</p>
 </div>
 
-
+<div class="view-project">
+    <h2>View my live project here</h2>
+    <a href="https://allisondrakedesign.com/idm241/final/build/finalbuild.html"><button class="view">VIEW</button></a>
+</div>
 
 </div>
 
