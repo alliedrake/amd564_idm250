@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Blog */
+/* Template Name: Portfolio Details */
 
 ?>
 <?php get_header();?>
@@ -13,12 +13,12 @@
 <div class="blog-content">
 
 
-<?php the_content(); ?>
 
+<?php the_content(); ?>
 
 <div class="blog-container">
 
-<div class="heading">
+<div class="heading2">
     <h3 class="tag">SCRIPTWRITING<h3>
     <h1 style="margin-left: 2rem;">Microinteractions</h1>
     <h5 style="margin-left: 3rem; font-size: 1rem; margin-top: -1.5rem;">SPRING 2020 | IDM 241</h5>

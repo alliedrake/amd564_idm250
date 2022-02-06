@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: My Work */
+/* Template Name: Portfolio Listing */
 
 ?>
 
@@ -28,7 +28,7 @@
 
         <div class="card-flex">
 
-        <a href ="/template-blog">
+        <a href ="single/">
         <div class="card">
             <img class="philm" src="<?php echo get_template_directory_uri();?>/dist/images/philm_card.png">
             <div class="card_container">
