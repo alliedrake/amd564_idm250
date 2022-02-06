@@ -775,3 +775,36 @@ img.search-result {
 
 }
 
+
+/*////////////////*/
+/*////////////////*/
+/*//////404 CSS //*/
+/*////////////////*/
+/*////////////////*/
+
+
+.landing-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+ gap: 1rem;
+}
+
+.landing-content {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+
+@media screen and (max-width: 800px) {
+   
+.landing-img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+}

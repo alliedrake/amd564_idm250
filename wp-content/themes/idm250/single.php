@@ -1,4 +1,8 @@
-<?php/* Template Name: Portfolio Detail */?>
+<?php
+
+/* Template Name: Portfolio Detail */
+
+?>
 
 <?php 
 

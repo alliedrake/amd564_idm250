@@ -19,13 +19,13 @@
 // Registered this new menu in functions.php via register_theme_navigation()
 wp_nav_menu(['theme_location' => 'primary_menu']); 
 
-$menu = idm250_render_menu('primary_menu');?>
+// $menu = idm250_render_menu('primary_menu');?>
 
  <!-- if ($menu_items) {
-     foreach ($menu_items as $key => $row) {
+//      foreach ($menu_items as $key => $row) {
 
-     }
- } -->
+//      }
+//  } -->
 
 
 
