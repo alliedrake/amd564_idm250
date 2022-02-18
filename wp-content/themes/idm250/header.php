@@ -11,7 +11,7 @@
     <?php wp_head(); ?> <!-- always put this just before closing tag of theme -->
     </head>
 
-    <body> 
+    <body <?php body_class(); ?>> 
 
     <div class="nav">
         

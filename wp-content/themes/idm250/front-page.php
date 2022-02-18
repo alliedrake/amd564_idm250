@@ -2,7 +2,10 @@
 <?php 
 get_header();?>
 
+
 <div class="page_container">
+
+
 
 <div class="intro">
     <h1>Hi, I’m Allison. I’m an aspiring UX/UI Designer at Drexel University.<h1>

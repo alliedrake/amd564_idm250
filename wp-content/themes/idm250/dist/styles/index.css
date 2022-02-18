@@ -55,6 +55,11 @@ li {
     float: right;
 }
 
+/* img.adlogo {
+    width: 2rem;
+    margin-left: 2rem;
+} */
+
 ul {
     padding-right: 2rem;
 }
@@ -78,6 +83,12 @@ h1 {
 h2 {
     font-family: 'Gilroy-Bold';
     color: #264E5E; 
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-family: 'Gilroy-Bold';
+    color: #264E5E;
 }
 
 
@@ -331,7 +342,7 @@ ul#menu-footer.menu {
 /*////////////////*/
 
 .title {
-    color: #E2E4F0;
+    color: #264e5e;
 }
 
 .work-content {
@@ -553,6 +564,10 @@ th {
 
 .final-build img {
     padding-top: 2rem;
+    width: 50%;
+}
+
+img.final-build {
     width: 70%;
 }
 
@@ -808,3 +823,54 @@ img.search-result {
 }  
 
 }
+
+
+
+/*////////////////*/
+/*////////////////*/
+/*Custom Project Page*/
+/*////////////////*/
+/*////////////////*/
+
+h3.tag {
+font-family: 'Gilroy-Bold';
+}
+
+
+
+
+.project_container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.project {
+    margin-top: 5rem;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+
+.text-content p {
+    font-family: 'Gilroy-Medium';
+    color: #264E5E;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-content h1, .text-content h2, .text-content h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
