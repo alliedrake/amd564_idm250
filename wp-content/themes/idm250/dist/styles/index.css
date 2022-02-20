@@ -91,6 +91,11 @@ h4 {
     color: #264E5E;
 }
 
+h6 {
+    font-size: 1rem;
+    font-family: 'Gilroy-Bold';
+    color: #264E5E;
+}
 
 body {
     background-color: #E2E4F0;
@@ -902,4 +907,19 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.conclusion p {
+    line-height: 1.5rem;
+    margin-top: -0.8rem;
+    margin-left: 1rem;
+    padding-bottom: 0rem;
+}
+
+.conclusion h2 {
+    padding-bottom: 2rem;
+}
+
+.conclusion {
+    padding-bottom: 3rem;
 }

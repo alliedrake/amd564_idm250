@@ -33,7 +33,7 @@ while (have_posts()) : the_post(); ?>
         <?php $image = get_field('primary_image'); 
               $picture = $image['sizes']['large'];?>
               <img src="<?php echo $picture;?>" class="microinteraction">
-              <p><?php the_field('caption');?></p>
+              <h6><?php the_field('caption');?></h6>
         </div>
         
               <!-- place after line 32 to check sizes / var_dump($image); -->
@@ -96,6 +96,7 @@ while (have_posts()) : the_post(); ?>
   <?php $image = get_field('secondary_image'); 
       $picture = $image['sizes']['large'];?>
       <img src="<?php echo $picture;?>" class="final-build">
+      <h6><?php the_field('secondary_caption');?></h6>
 </div>
 
       <h2><?php the_field('beta_heading');?></h2>
@@ -139,13 +140,22 @@ while (have_posts()) : the_post(); ?>
 ?>
 </div>
 
+<div class="conclusion">
+
+<h2><?php the_field('conclusion_heading');?></h2>
+
+<p>1. <?php the_field('ordered_list');?></p>
+<p>2. <?php the_field('ordered_list_2');?></p>
+<p>3. <?php the_field('ordered_list_3');?></p>
+
+</div>
+
     <div class="view_project">
         <h2><?php the_field('link_h2');?></h2>
         <a href="<?php the_field('button'); ?>"><button class="view">VIEW</button></a>
 
     </div>
 </div>
-
 
   
         <!--End content-->
