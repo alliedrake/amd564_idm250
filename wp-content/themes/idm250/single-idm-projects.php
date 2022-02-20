@@ -29,9 +29,13 @@ while (have_posts()) : the_post(); ?>
         <h5 style="margin-left: 3rem; font-size: 1rem; margin-top: -1.5rem;"><?php the_field('project_year');?> | <?php the_field('project_client');?></h5>
         
         <!--Image Section (custom field) -->
+        <div class="image">
         <?php $image = get_field('primary_image'); 
               $picture = $image['sizes']['large'];?>
               <img src="<?php echo $picture;?>" class="microinteraction">
+              <p><?php the_field('caption');?></p>
+        </div>
+        
               <!-- place after line 32 to check sizes / var_dump($image); -->
 
         <div class="text-content">
@@ -51,6 +55,7 @@ while (have_posts()) : the_post(); ?>
           <li class="goals"><?php the_field('goals_list_2');?></li>
           <li class="goals"><?php the_field('goals_list_3');?></li>
           <li class="goals"><?php the_field('goals_list_4');?></li>
+        </ul>
       
     <div class="table-flex">
       <?php  $table = get_field( 'table' );
@@ -87,9 +92,11 @@ while (have_posts()) : the_post(); ?>
         ?>
 </div>
 
+<div class="image">
   <?php $image = get_field('secondary_image'); 
       $picture = $image['sizes']['large'];?>
       <img src="<?php echo $picture;?>" class="final-build">
+</div>
 
       <h2><?php the_field('beta_heading');?></h2>
       <p><?php the_field('beta_paragraph');?></p>
@@ -104,14 +111,39 @@ while (have_posts()) : the_post(); ?>
     <h2><?php the_field('final_heading');?></h2>
     <p><?php the_field('final_paragraph');?></p>
 
-
+<div class="image">
     <?php
-$file = get_field('video');
-if( $file ): ?>
-    <a href="<?php echo $file['url']; ?>"><?php echo $file['filename']; ?></a>
-<?php endif; ?>
+    // Load value.
+    $iframe = get_field('video');
+
+    // Use preg_match to find iframe src.
+    preg_match('/src="(.+?)"/', $iframe, $matches);
+    $src = $matches[1];
+
+    // Add extra parameters to src and replace HTML.
+    $params = array(
+        'controls'  => 0,
+        'hd'        => 1,
+        'autohide'  => 1
+    );
+    $new_src = add_query_arg($params, $src);
+    $iframe = str_replace($src, $new_src, $iframe);
+
+    // Add extra attributes to iframe HTML.
+    $attributes = 'frameborder="0"';
+    $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
 
+    // Display customized HTML.
+    echo $iframe;
+?>
+</div>
+
+    <div class="view_project">
+        <h2><?php the_field('link_h2');?></h2>
+        <a href="<?php the_field('button'); ?>"><button class="view">VIEW</button></a>
+
+    </div>
 </div>
 
 
