@@ -47,3 +47,4 @@ function idm_register_custom_post_type()
 }
 
 add_action('init', 'idm_register_custom_post_type');
+

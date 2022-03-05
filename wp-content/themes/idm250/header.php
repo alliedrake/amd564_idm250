@@ -11,22 +11,23 @@
     <?php wp_head(); ?> <!-- always put this just before closing tag of theme -->
     </head>
 
-    <body <?php body_class(); ?>> 
+    <body <?php body_class(); ?>>
 
     <div class="nav">
         
 <?php 
 // Registered this new menu in functions.php via register_theme_navigation()
-wp_nav_menu(['theme_location' => 'primary_menu']); 
+wp_nav_menu(['theme_location' => 'primary_menu']); ?>
 
-// $menu = idm250_render_menu('primary_menu');?>
+<img style="height:70px; padding-left: 2rem;" src="<?php echo get_template_directory_uri() . '/dist/images/adlogo.png' ?>" alt="">
 
- <!-- if ($menu_items) {
-//      foreach ($menu_items as $key => $row) {
+<?php 
 
-//      }
-//  } -->
+// get_search_form();
 
 
+get_template_part('components/search-form');
+
+?>
 
 </div>

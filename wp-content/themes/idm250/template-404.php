@@ -18,11 +18,15 @@ while (have_posts()) : the_post(); ?>
 
         <div class="landing-container">
             <div class="landing-img">
-                <img class="landing-img" src="<?php echo get_template_directory_uri();?>/dist/images/404.svg">
+                <div class="image">
+                    <?php $image = get_field('image'); 
+                        $picture = $image['sizes']['large'];?>
+                        <img src="<?php echo $picture;?>" class="landing-img">
+                </div>
             </div>
             
-            <h2>oops! page not found.</h2>
-            <button class="view">RETURN HOME</button>
+            <h2><?php the_field('h2');?></h2>
+            <a href="<?php the_field('button'); ?>"><button class="view">RETURN HOME</button></a>
         </div>  
 
  <!--End content-->

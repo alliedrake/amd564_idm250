@@ -822,7 +822,7 @@ img.search-result {
 @media screen and (max-width: 800px) {
    
 .landing-img {
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
