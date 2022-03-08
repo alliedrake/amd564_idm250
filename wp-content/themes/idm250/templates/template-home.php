@@ -18,7 +18,7 @@ while (have_posts()) : the_post(); ?>
 <div class="intro">
     <h1><?php the_field('h1');?><h1>
         <h4 style="font-family:'Gilroy-Medium'; font-size: 20px; color: #FA8C62; text-align: center;"><?php the_field('h4');?><h4>
-            <hr style="height: 80px; width: 2px; border: 1px solid #FA8C62;">
+            <hr style="height: 80px; width: 2px; background-color: #FA8C62 border: 1px solid #FA8C62;">
 
 </div>
 

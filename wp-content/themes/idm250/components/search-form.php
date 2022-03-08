@@ -4,11 +4,11 @@
 <form class="search-form" action="<?php echo home_url(); ?>/search/"
   method="get">
 
-    <input placeholder="Search..." type="text" name="s" value="">
+    <input placeholder="Search..." type="text" id="mySearch" name="s" value="">
 
     <input type="hidden" name="post_type[]" value="idm-projects">
 
-    <button>Submit</button>
+    <button class="search"><i class="fa fa-search"></i></button>
 
 </form>
 
