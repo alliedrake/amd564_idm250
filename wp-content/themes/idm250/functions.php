@@ -20,11 +20,11 @@ require get_template_directory() . '/includes/post-types.php';
 /**
  * Custom Taxonomies
  */
-// require get_template_directory() . '/includes/taxonomies.php';
+require get_template_directory() . '/includes/taxonomies.php';
 
 
 // /** Helper functions
 //  */
-// require get_template_directory() . '/includes/helpers.php';
+require get_template_directory() . '/includes/helpers.php';
 
 

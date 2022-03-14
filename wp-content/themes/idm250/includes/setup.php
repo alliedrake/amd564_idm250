@@ -79,3 +79,16 @@ function add_post_thumbnails_support()
 }
 add_action('after_setup_theme', 'add_post_thumbnails_support');
 
+function idm_register_sidebars()
+{
+    register_sidebar([
+        'name' => __('Primary Sidebar', 'theme_name'),
+        'id' => 'sidebar-primary',
+    ]);
+    register_sidebar([
+        'name' => __('Secondary Sidebar', 'theme_name'),
+        'id' => 'secondary-primary',
+    ]);
+}
+
+add_action('widgets_init', 'idm_register_sidebars');

@@ -15,11 +15,21 @@ while (have_posts()) : the_post(); ?>
 
 
 <main>
+
+<?php
+        $terms = get_the_terms(get_the_ID(), 'idm-project-categories');
+        if ($terms) {
+            foreach ($terms as $term) {
+             $term->name;
+            }
+        }
+    ?>
+    
 <div class="">
 
   <div class="project_container">
     <div class="project">
-    <h3 class="tag"><?php the_field('category');?>
+    <h3 class="tag"><?php echo $term->name;?>
     <h1 class="title"><?php the_title(); ?> </h1>
 
     <div class="">
@@ -32,7 +42,7 @@ while (have_posts()) : the_post(); ?>
         <div class="image">
         <?php $image = get_field('primary_image'); 
               $picture = $image['sizes']['large'];?>
-              <img src="<?php echo $picture;?>" class="microinteraction">
+              <img src="<?php echo $picture;?>" class="teaser-image">
               <h6><?php the_field('caption');?></h6>
         </div>
         

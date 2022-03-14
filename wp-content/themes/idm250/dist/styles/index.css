@@ -364,8 +364,8 @@ ul#menu-footer.menu {
 }
 
 img.philm {
-    width: 16.5rem;
-    height: 8.776rem;
+    width: 20.5rem;
+    height: 12.776rem;
     margin-bottom: -0.6rem;
     border-radius: 5px 5px 0px 0px; /* 5px rounded corners */
 }
@@ -381,7 +381,7 @@ img.philm {
   .card_container {
     padding: 2px 16px;
     background-color: #ffffff;
-    width: 16.375rem;
+    width: 20.5rem;
   }
 
   h5 {
@@ -937,4 +937,49 @@ button:hover {
 
 .conclusion {
     padding-bottom: 3rem;
+}
+
+.teaser-image {
+    width: 80%;
+}
+
+.teaser-content {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.teaser-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+a.link {
+    margin-top: -2rem;
+    font-size: 1.6rem;
+    font-family: 'Gilroy-Bold';
+    color: #264E5E; 
+    padding: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+span.project-teaser__tag {
+    margin-bottom: -1.5rem;
+}
+
+.teaser-content p {
+    font-size: 1rem;
+    color: #264E5E;
+    font-family: 'Gilroy-Regular';
+    line-height: 1.5rem;
+    margin-top: -1.5rem;
+    width: 80%;
+
 }
