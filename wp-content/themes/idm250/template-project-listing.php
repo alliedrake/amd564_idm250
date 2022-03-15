@@ -9,7 +9,7 @@ get_header(); ?>
   </h1>
 
 
-  <div class="grid-3">
+  <div class="teaser-container">
     <?php
       // https://developer.wordpress.org/reference/classes/wp_query/
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

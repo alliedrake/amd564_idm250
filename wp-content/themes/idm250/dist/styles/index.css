@@ -960,15 +960,6 @@ button:hover {
 }
 
 
-a.link {
-    margin-top: -2rem;
-    font-size: 1.6rem;
-    font-family: 'Gilroy-Bold';
-    color: #264E5E; 
-    padding: 0rem;
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
-}
 
 span.project-teaser__tag {
     margin-bottom: -1.5rem;
@@ -982,4 +973,35 @@ span.project-teaser__tag {
     margin-top: -1.5rem;
     width: 80%;
 
+}
+
+.teaser-content h3 {
+    margin-left: 0;
+    margin-top: -2rem;
+    font-size: 1.6rem;
+    font-family: 'Gilroy-Bold';
+    color: #264E5E; 
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.sidebar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.sidebar-main {
+	width: 60%;
+}
+.sidebar-aside {
+	width: 30%;
+}
+
+span.project-teaser__tag a {
+    padding-left: 0;
+}
+
+.teaser-content a {
+    padding-left: 0;
+    margin-bottom: -1.5rem;
 }

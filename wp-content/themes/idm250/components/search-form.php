@@ -1,8 +1,7 @@
 
 <?php // get_search_form(); is default way in WP of adding a search bar, we want to create our own ?>
 <!-- Create search page  -->
-<form class="search-form" action="<?php echo home_url(); ?>/search-2/"
-  method="get">
+<form class="search-form" action="<?php echo home_url(); ?>/search-2" method="get">
 
     <input placeholder="Search..." type="text" id="mySearch" name="s" value="">
 

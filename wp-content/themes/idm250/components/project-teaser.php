@@ -34,7 +34,7 @@
       }
         ?>
 
-                    <a class="link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
                     <p class="excerpt"><?php the_excerpt();?></p>
 
       </div>
