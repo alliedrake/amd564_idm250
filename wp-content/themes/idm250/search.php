@@ -22,14 +22,14 @@
 ?>
 
 <!-- <?php
-// get_template_part(
-//     'components/heros/home-hero',
-//     null,
-//     [
-//         'heading' => 'Search results for "' . $_GET['s'] . '"',
-//         'body' => ''
-//     ]
-// );
+get_template_part(
+    'components/searchheader',
+    null,
+    [
+        'heading' => 'Search results for "' . $_GET['s'] . '"',
+        'body' => ''
+    ]
+);
 ?> -->
 
 <div class="teaser-container">

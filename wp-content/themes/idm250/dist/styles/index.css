@@ -78,6 +78,8 @@ h1 {
     font-size: 3rem;
     font-family: 'Gilroy-Bold';
     color: #264E5E;
+    text-align: center;
+    padding-top: 2rem;
 }
 
 h2 {
@@ -671,12 +673,6 @@ button.search {
     border-bottom-right-radius: 5px;
 }
 
-.search-results {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
-}
 
 
 img.search-result {
@@ -769,6 +765,48 @@ img.search-result {
     }
 }
 
+@media screen and (max-width: 700px) {
+    
+    form.search-form {
+        margin-left: 2rem;
+        float: right;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        display: block;
+        padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #mySearch {
+        padding: 0rem;
+        border:none;
+        width: 0px;
+        /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+        border-radius: 5px;
+        margin-right: -0.5rem;
+        font-family: 'Gilroy-Regular';
+    }
+
+    button.search {
+        padding: .55rem;
+        background-color: #264E5E;
+        border: none;
+        width: 40px;
+        height: 37px;
+        /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+        border-radius: 5px;
+    }
+
+}
+
+
 @media screen and (max-width: 600px) {
     .search-results {
         padding-top: 6rem;
@@ -808,9 +846,14 @@ img.search-result {
 }
 
 form.search-form {
-    display: inline-block;
     margin-left: 2rem;
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
 }
+
+
+
 
 /*////////////////*/
 /*////////////////*/
@@ -940,7 +983,7 @@ button:hover {
 }
 
 .teaser-image {
-    width: 80%;
+    width: 100%;
 }
 
 .teaser-content {
@@ -957,6 +1000,8 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 
@@ -1004,4 +1049,36 @@ span.project-teaser__tag a {
 .teaser-content a {
     padding-left: 0;
     margin-bottom: -1.5rem;
+}
+
+.blog_page_container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.blog_container {
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.sidebar-aside {
+    width: 30%;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .teaser-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
 }

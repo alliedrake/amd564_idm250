@@ -12,8 +12,10 @@ get_header();?>
 <?php
 while (have_posts()) : the_post(); ?>
 
-<div class="">
-    <h1 class=""><?php the_title(); ?> </h1>
+
+<h1 class="blog"><?php the_title(); ?> </h1>
+
+<div class="blog_page_container">
 
     <?php 
     
@@ -21,12 +23,29 @@ while (have_posts()) : the_post(); ?>
 
     <?php the_post_thumbnail();?>
 
-    <div class="">
-        <!--End content-->
-
+    <div class="blog_container">
+        <!--Start content-->
         <?php the_content(); ?>
+
+            <div class="blog_heading">
+            <h1><?php the_field('h1');?></h1>
+            </div>
+        
+            <div class="image">
+            <?php $image = get_field('image'); 
+              $picture = $image['sizes']['large'];?>
+              <img src="<?php echo $picture;?>" class="teaser-image">
+        </div>
+
+            <div class="blog_text">
+                <p><?php the_field('paragraph_one');?></p>
+                <p><?php the_field('paragraph_two');?></p>
+            </div>  
         <!--End content-->
     </div>
+    <aside class="sidebar-aside">
+    <?php dynamic_sidebar('sidebar-primary'); ?>
+    </aside>
 </div>
 
 <?php endwhile;?>
