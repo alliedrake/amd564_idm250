@@ -13,7 +13,7 @@ get_header();?>
 while (have_posts()) : the_post(); ?>
 
 
-<h1 class="blog"><?php the_title(); ?> </h1>
+<h1 class="my-work"><?php the_title(); ?> </h1>
 
 <div class="blog_page_container">
 
@@ -28,15 +28,14 @@ while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
 
             <div class="blog_heading">
-            <h1><?php the_field('h1');?></h1>
+            <h1 class="blog_title"><?php the_field('h1');?></h1>
             </div>
         
-            <div class="image">
-            <?php $image = get_field('image'); 
+        <div class="image">
+        <?php $image = get_field('blog_image'); 
               $picture = $image['sizes']['large'];?>
-              <img src="<?php echo $picture;?>" class="teaser-image">
+              <img src="<?php echo $picture;?>" class="blog_image">
         </div>
-
             <div class="blog_text">
                 <p><?php the_field('paragraph_one');?></p>
                 <p><?php the_field('paragraph_two');?></p>

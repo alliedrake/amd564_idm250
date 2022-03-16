@@ -55,16 +55,16 @@ while (have_posts()) : the_post(); ?>
         <br>
 
         <h2><?php the_field('context_heading');?></h2>
-        <h3 style="color:#E57347; font-family: Gilroy-Bold;"><?php the_field('background_heading');?></h3>
+        <h3><?php the_field('background_heading');?></h3>
         <p><?php the_field('background_paragraph');?></p>
 
-        <h3 style="color:#E57347; font-family: Gilroy-Bold;"><?php the_field('goals_heading');?></h3>
+        <h3><?php the_field('goals_heading');?></h3>
 
         <ul class="goals-list">
-          <li class="goals"><?php the_field('goals_list');?></li>
-          <li class="goals"><?php the_field('goals_list_2');?></li>
-          <li class="goals"><?php the_field('goals_list_3');?></li>
-          <li class="goals"><?php the_field('goals_list_4');?></li>
+          <li><?php the_field('goals_list');?></li>
+          <li><?php the_field('goals_list_2');?></li>
+          <li><?php the_field('goals_list_3');?></li>
+          <li><?php the_field('goals_list_4');?></li>
         </ul>
       
     <div class="table-flex">
