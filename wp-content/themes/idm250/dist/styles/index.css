@@ -85,17 +85,25 @@ h1 {
 h2 {
     font-family: 'Gilroy-Bold';
     color: #264E5E; 
+    font-size: 2rem;
 }
 
 h3 {
     color:#E57347;
     font-family: 'Gilroy-Bold';
+    font-size: 1.6rem;
 }
 
 h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: 'Gilroy-Bold';
     color: #264E5E;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: 'Gilroy-Bold';
+    color: #E57347;
 }
 
 h6 {
@@ -545,6 +553,7 @@ ul.goals-list li {
 
 table, th, td {
     border: 3px solid #ECEDF2;
+    background-color: #f7f7f7;
     border-collapse: collapse;
     padding: 1rem;
     font-family: 'Gilroy-Medium';
@@ -572,9 +581,10 @@ th {
 }
 
 .quote-section {
-    
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -1139,5 +1149,14 @@ span.project-teaser__tag a {
     }
 
 
+}
+
+
+.project2 {
+    margin-top: 5rem;
+    background-color: #E2E4F0;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    padding: 1rem;
 }
 
