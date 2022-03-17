@@ -20,7 +20,7 @@ while (have_posts()) : the_post(); ?>
 
   <div class="project_container">
     <div class="project2">
-    <h3 class="tag"><?php get_field('h3_tag');?>
+    <h3 class="tag"><?php echo get_field('h3_tag');?></h3>
     <h1 class="title"><?php the_title(); ?> </h1>
 
     <div class="">

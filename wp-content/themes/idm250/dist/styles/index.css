@@ -560,6 +560,9 @@ table, th, td {
     color: #264E5E;
   }
 
+
+
+
 th {
     font-family: "Gilroy-Bold";
     color: #FA8C62;
@@ -822,6 +825,12 @@ img.search-result {
         border-radius: 5px;
     }
 
+}
+
+.teaser-container p {
+    font-family:'Gilroy-Medium';
+    color: #264E5E;
+    font-size: 1.2rem;
 }
 
 

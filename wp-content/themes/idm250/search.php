@@ -6,6 +6,7 @@
 
 <?php get_header(); ?>
 
+
 <?php
 
 // echo '<pre>';
@@ -36,7 +37,7 @@ get_template_part(
     <?php
 
 
-  if ($search_query->have_posts()) {
+  if ($search_query->have_posts() && $_GET['s'] != '') {
 
       while ($search_query->have_posts()) : $search_query->the_post();
 
@@ -47,10 +48,12 @@ get_template_part(
       wp_reset_postdata();
   } else {
       // no results
-      echo '<p>Sorry, there are no results</p>';
+      echo '<p class="results">Sorry, there are no results</p>';
   }
 
 ?>
+
+</main>
 
 </div>
 <?php get_footer();
